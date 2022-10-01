@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reorder Point Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="reorderpointRadio" name="variables" checked>
+  <label for="reorderpointRadio">Reorder point</label>
+
+  <input type="radio" id="basicstockRadio" name="variables">
+  <label for="basicstockRadio">Basic stock</label>
+
+  <input type="radio" id="safetystockRadio" name="variables">
+  <label for="safetystockRadio">Safety stock</label>
+
+  <input type="radio" id="leadtimeRadio" name="variables">
+  <label for="leadtimeRadio">Lead time</label>
+
+  <input type="radio" id="unitsalesRadio" name="variables">
+  <label for="unitsalesRadio">Unit sales</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">Basic stock</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">Safety stock</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">Lead time</label>
+  <input type="number" id="v3"><br><br>
+  
+  <label for="v4" id="variable4">Unit sales</label>
+  <input type="number" id="v4"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
